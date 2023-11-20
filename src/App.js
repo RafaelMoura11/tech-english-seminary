@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main">
+      <div id="first-section">
+        <img src="https://www.pe.senac.br/wp-content/uploads/2018/05/Professor_Saulo-Bernardo-1.jpg" alt="professor-saulo" id="saulo-image"/>
+        <div id="hello-world">
+          <h1>Hello World</h1>
+          <p>With CSS you can make your page much more organized and prettier</p>
+        </div>
+      </div>
+      <hr />
     </div>
   );
 }
