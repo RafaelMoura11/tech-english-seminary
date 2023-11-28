@@ -4,28 +4,27 @@ body {
 }
 
 hr {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 #first-section {
-  margin-top: 50px;
+  margin-top: 5vw;
   display: flex;
   justify-content: space-around;
 }
 
 #first-section > img {
-  width: 400px;
-  height: 400px;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
+  border: 0.5vw solid #1f5f8a;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
-
-/* #first-section > div {
-  margin-left: 50px;
-} */
 
 #hello-world {
   display: flex;
@@ -41,6 +40,89 @@ hr {
 #hello-world > p {
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
-  font-size: larger;
+  font-size: 2vw;
   color: rgb(218, 214, 214);
+}
+
+#second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#square {
+  width: 20vw;
+  height: 20vw;
+  background-color: white;
+  border: 0.3vw solid black;
+  cursor: pointer;
+  margin: 1vw;
+}
+
+#colors-board {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw;
+  width: 20vw;
+}
+
+.color-circle {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+.animated-div {
+  width: 20vw;
+  height: 20vw;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2vw;
+}
+
+#change-color-div {
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#spinning-div {
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#change-size-div {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#third-section {
+  display: flex;
+  justify-content: space-around;
 }
