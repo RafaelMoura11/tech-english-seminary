@@ -18,8 +18,8 @@ hr {
 }
 
 #first-section > img {
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   border: 0.5vw solid #1f5f8a;
   margin-right: 2vw;
@@ -125,4 +125,22 @@ hr {
 #third-section {
   display: flex;
   justify-content: space-around;
+}
+
+#last-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+#last-section > div > img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+#last-section > div > p {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
 }
